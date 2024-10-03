@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+//Compiler version g++ 6.3.0
+
+int main()
+{
+    string employee_name;
+    int hours_worked = 0;
+    double pay_rate = 0.0;
+    double gross_pay = 0.0;
+    
+    cout << "Please enter the full name of the employee:" << endl;
+    cin >> employee_name;
+    cout << "Please enter the total amount of hours that the employee has worked:" << endl;
+    cin >> hours_worked;
+    cout << "Please enter the current rate of pay for the employee:" << endl;  
+    cin >> pay_rate;
+    gross_pay = (hours_worked * pay_rate);
+    
+    cout << "The current gross pay of the employee is:" << gross_pay << endl;
+    
+    return 0;
+}
